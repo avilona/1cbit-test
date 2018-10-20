@@ -1,0 +1,30 @@
+.section{
+  width: 100%;
+  padding: 0px 15px;
+}
+
+.section__inner{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0px auto;
+  padding: 50px 0;
+}
+
+.section__h1{
+  font-family: $fontH;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.section__h2{
+  font-family: $fontH;
+  font-size: 36px;
+  text-align: center;
+}
+
+.section__h3{
+  text-align: center;
+  font-size: 36px;
+  font-family: $fontH;
+}

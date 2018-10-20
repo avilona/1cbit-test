@@ -1,0 +1,52 @@
+.require{
+  position: relative;
+
+  color: $white;
+  font-size: 22px;
+  background-image: url(../images/bg_parallax.jpg);
+  background-attachment: fixed;
+  @include background-set();
+
+  &:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background: url(../images/pattern.png) 0 0 repeat;
+  }
+
+  .section__h2{
+    font-size: 48px;
+  }
+
+  .section__inner{
+    position: relative;
+    z-index: 2;
+
+    padding: 20px 0 77px 0;
+  }
+
+  a{
+    color: $white;
+  }
+}
+
+.require__wrapper{
+  @include flexbox();
+  @include flex-wrap(wrap);
+}
+
+.require__column{
+  width: 50%;
+  padding-right: 15px;
+
+  &:last-child{
+    padding-right: 0;
+    padding-left: 15px;
+  }
+}

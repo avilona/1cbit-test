@@ -1,0 +1,9 @@
+@mixin background-set(){
+  background-size: cover;
+  background-position: center center;
+}
+@mixin clearfix(){
+  content: '';
+  display: table;
+  clear: both;
+}

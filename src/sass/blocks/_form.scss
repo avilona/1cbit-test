@@ -1,0 +1,87 @@
+.form{
+  .section__inner{
+    @include flexbox();
+    @include justify-content(space-between);
+    padding: 10px 0 45px 20px;
+  }
+
+  .section__h3{
+    margin-bottom: 50px;
+  }
+}
+
+.form__column{
+  width: 47%;
+
+  &:last-child{
+    width: 51%;
+  }
+}
+
+.form__item{
+  background-color: $light-gray;
+  padding: 56px 110px;
+}
+
+.form__text-input{
+  width: 100%;
+  margin-bottom: 19px;
+}
+
+.form__row{
+  @include flexbox();
+  @include align-items(center);
+  margin-top: 0;
+  padding-top: 2px;
+  margin-bottom: 20px;
+}
+
+.form__text-checkbox + label{
+  @include flexbox();
+  @include align-items(center);
+  margin-left: 56px;
+  position: relative;
+
+  &:before{
+    content: "";
+    width: 42px;
+    height: 42px;
+    border: solid 1px $gray;
+    background-color: $white;
+    margin-right: 15px;
+  }
+}
+
+.form__text-checkbox:first-child + label{
+  margin-left: 0;
+}
+
+.form__text-checkbox:checked + label{
+  &:after{
+    content: "";
+    width: $check-width;
+    height: $check-height;
+    background: url(../images/sprite.png) $check-offset-x $check-offset-y no-repeat;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    display: block;
+  }
+}
+
+.form__button{
+  padding: 10px 70px 10px 43px;
+  position: relative;
+
+  &:after{
+    content: "";
+    width: $send-width;
+    height: $send-height;
+    background: url(../images/sprite.png) $send-offset-x $send-offset-y no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    right: 36px;
+    display: block;
+  }
+}

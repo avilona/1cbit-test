@@ -1,0 +1,27 @@
+section#form.section.form
+  .section__inner
+    .form__column
+      h3.section__h3 Форма обратной связи
+      form.form__item(action="/", method="POST")
+        label.visually-hidden(for="form-name") Имя
+        input#form-name.form__text-input(type="text", name="name", required, placeholder="Имя")
+        label.visually-hidden(for="form-phone") Телефон
+        input#form-phone.form__text-input(type="tel", name="phone", required, placeholder="Телефон")
+        p.form__row
+          input#chekbox-1.visually-hidden.form__text-checkbox(type="checkbox", name="cool", checked)
+          label(for="chekbox-1") Клёво
+          input#chekbox-2.visually-hidden.form__text-checkbox(type="checkbox", name="bad")
+          label(for="chekbox-2") Не очень
+        button.button.form__button(type="submit") Отправить в бездну
+    .form__column
+      h3.section__h3 Фотографии нашего офиса
+      .photo-grid
+        a.photo-grid__item(href="images/office/photo_01.jpg", data-fancybox="gallery")
+          img.photo-grid__image(src="images/office/mini_01.jpg", width="252", height="157", alt="Фото офиса 1")
+        a.photo-grid__item(href="images/office/photo_02.jpg", data-fancybox="gallery")
+          img.photo-grid__image(src="images/office/mini_02.jpg", width="252", height="157", alt="Фото офиса 2")
+        a.photo-grid__item(href="images/office/photo_03.jpg", data-fancybox="gallery")
+          img.photo-grid__image(src="images/office/mini_03.jpg", width="252", height="157", alt="Фото офиса 3")
+        a.photo-grid__item(href="images/office/photo_04.jpg", data-fancybox="gallery")
+          img.photo-grid__image(src="images/office/mini_04.jpg", width="252", height="157", alt="Фото офиса 4")
+          

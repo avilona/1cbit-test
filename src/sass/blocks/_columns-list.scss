@@ -1,0 +1,16 @@
+.columns-list{
+  list-style-position: inside;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 14px;
+
+  @include flexbox();
+  @include flex-direction(column);
+  @include flex-wrap(wrap);
+
+  li{
+    margin-bottom: 29px;
+    width: 100%;
+    line-height: 1.1;
+  }
+}

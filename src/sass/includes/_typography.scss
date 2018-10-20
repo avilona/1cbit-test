@@ -1,0 +1,51 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: $font;
+  font-size: 18px;
+  color: $black;
+  margin: 0;
+  padding: 0;
+  @include flexbox();
+  @include flex-direction(column);
+  min-height: 100vh;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+button{
+  font-family: inherit;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+input[type="text"], textarea, select:not(.js-select),
+input[type="email"], input[type="password"],
+input[type="search"], input[type="tel"],
+input[type="number"]{
+  display: inline-block;
+
+  border: 1px solid $gray;
+  background-color: $white;
+
+  font-family: inherit;
+  line-height: normal;
+  padding: 9px 10px;
+}

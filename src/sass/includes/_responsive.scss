@@ -1,0 +1,153 @@
+@media all and (max-width: 1200px) {
+  .form .section__inner{
+    padding-left: 0;
+  }
+
+  .form__item{
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    padding: 56px 15px;
+  }
+
+  .form__text-input{
+    max-width: 330px;
+  }
+
+  .form__row,
+  .form__button{
+    width: 100%;
+    max-width: 330px;
+  }
+}
+
+@media all and (max-width: 990px) {
+  .columns-list{
+    word-wrap: break-word;
+  }
+
+  .require__column{
+    width: 100%;
+    padding-right: 0;
+    &:last-child{
+      padding-left: 0;
+    }
+  }
+
+  .form .section__inner{
+    @include flex-wrap(wrap);
+  }
+
+  .form__column{
+    width: 100%;
+  }
+
+  .form__column:last-child{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .section__h1{
+    font-size: 40px;
+  }
+
+  .intro .section__inner{
+    padding: 53px 0 108px;
+  }
+
+  .footer .section__inner{
+    @include flex-direction(column);
+    text-align: center;
+  }
+
+  .footer__text{
+    margin: 0 0 15px 0;
+  }
+
+  .header__menu-toggler{
+    display: block;
+    width: 36px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__menu-line{
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: $blue;
+    margin-bottom: 6px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .header__navigation{
+    position: relative;
+  }
+
+  .header__menu{
+    display: none;
+    position: absolute;
+    top: 53px;
+    right: -15px;
+    width: 100vw;
+    background-color: #ffffff;
+    padding: 0 15px;
+  }
+
+  .header__menu-item {
+    margin-left: 0px;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+  .header__menu-link{
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .photo-grid__item{
+    width: 100%;
+  }
+
+  .header__logo-image{
+    max-width: 180px;
+  }
+
+  .main{
+    margin-top: 77px;
+  }
+
+  .header__menu{
+    top: 50px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .form__row{
+    @include flex-direction(column);
+    @include align-items(flex-start);
+    margin-bottom: 0;
+  }
+
+  .form__text-checkbox+label{
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .form__button{
+    padding: 10px 34px 10px 34px;
+  }
+
+  .form__button:after{
+    right: 10px;
+  }
+
+  .form__item{
+    padding: 20px 15px;
+  }
+}

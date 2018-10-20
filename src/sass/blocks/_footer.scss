@@ -1,0 +1,15 @@
+.footer{
+  background-color: $gray;
+  color: $white;
+
+  a{
+    color: $white;
+  }
+
+  .section__inner{
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    padding: 10px 0;
+  }
+}

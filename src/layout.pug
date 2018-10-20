@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+  head
+    block head
+      title #{title} - 1cbit test task
+      meta(charset="utf-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      link(rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css")
+      link(rel="stylesheet" href="js/slick/slick.css")
+      link(rel="stylesheet" href="css/style.min.css")
+  block body
+    body
+      block header
+        include partials/header.pug
+      main.main
+        block content
+      include partials/footer.pug
+      script(src="js/jquery-3.2.1.min.js")
+      script(src="js/fancybox/jquery.fancybox.min.js")
+      script(src="js/slick/slick.min.js")
+      script(src="js/script.min.js")

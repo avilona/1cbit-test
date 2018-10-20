@@ -1,0 +1,14 @@
+.photo-grid{
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
+.photo-grid__item{
+  width: calc(50% - 10.5px);
+  margin-bottom: 17px;
+}
+
+.photo-grid__image{
+  width: 100%;
+}
